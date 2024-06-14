@@ -2,7 +2,7 @@ import React,{useState,useCallback, useEffect} from 'react';
 
 import MoviesList from './components/MoviesList';
 import './App.css';
-
+import Input from './Input';
 function App() {
 
 
@@ -60,6 +60,7 @@ function App() {
 
   return (
     <React.Fragment>
+      <div><Input/></div>
       <section>
         <button onClick={fetchmovieHandler}>Fetch Movies</button>
       </section>
@@ -70,7 +71,7 @@ function App() {
        {isLoading  &&  <p>Loading Please Wait......</p>}
      
       </section>
-      
+
     </React.Fragment>
   );
 }
